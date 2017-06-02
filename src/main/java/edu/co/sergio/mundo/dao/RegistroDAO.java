@@ -54,11 +54,11 @@ public class RegistroDAO     {
 	      
 	        
 	        id = rs.getInt("idColmena ");
-	        registros.se(id);
+	        registros.setIdColmena(id);
 	        
 	        
 	        
-	        registros.add(registro);
+	        
 	    }
 	    st.close();
 	    
@@ -67,7 +67,7 @@ public class RegistroDAO     {
 			e.printStackTrace();
 		}
 	    
-	    return registros;
+	    return (List<Registro>) registros;
 	}
 }
 

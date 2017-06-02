@@ -24,9 +24,9 @@ public class HelloCrunchify extends HttpServlet {
         RegistroDAO dao = new RegistroDAO();
         
         Registro registro = new Registro();
-        registro.setId(Integer.parseInt(id));
+        registro.setIdColmena(Integer.parseInt(id));
         
-        dao.insert(registro);
+         
         
         //Listando la informacion  
         List<Registro> registros =  dao.findAll();
